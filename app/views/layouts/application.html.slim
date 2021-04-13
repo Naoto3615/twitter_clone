@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" /
+    title
+      | ベビトモ
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body
+    h1 さあ、世界につぶやこう！
+    nav.header
+      -if user_signed_in?
+        = link_to"投稿する", new_tweet_path
+        / = link_to current_user ログインしているユーザーを表示させたい
+        = link_to"ログアウト", destroy_user_session_path, method: :delete
+        = link_to"マイページ", user_path(current_user.id)
+      -else
+        = link_to"新規登録", new_user_registration_path
+        = link_to"ログイン", new_user_session_path
+
+      = link_to "ツイート一覧", tweets_path
+      = link_to "ユーザー一覧", users_path
+  = yield

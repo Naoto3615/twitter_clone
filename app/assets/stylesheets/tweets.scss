@@ -1,3 +1,90 @@
-// Place all the styles related to the tweets controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+// ----------------------------------------- 
+// tweets/index
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows : 1fr 1fr 1fr;
+}
+.item {
+  border-radius: 10px;
+  background: rgb(15, 172, 23);
+  // padding: 15px;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  text-align: left;
+}
+.tweet_content{
+  display:block;
+  width:100%;
+}
+// ----------------------------------------- 
+
+
+// ----------------------------------------- 
+// ページネーション
+.pagination{
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+.pagination span{
+  margin: 1%;
+  background-color:whitesmoke;
+  text-align: center;
+  width: 100%;
+  border: solid 1px #344963;
+  border-radius: 15px;
+  color: rgb(197, 20, 159);
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.pagination span:hover{
+  transition: .3s;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.pagination span a:hover{
+  transition: .3s;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+// ----------------------------------------- 
+
+// ----------------------------------------- 
+// 投稿ページ
+h1.tweet_title{
+  color:orange;
+}
+.tweet_insert{
+  text-align: center;
+}
+.tweet_field{
+  text-align: center;
+}
+textarea#tweet_body{
+  color:gray;
+  border-style: none;
+  width: 300px;
+  height: 7em;
+  line-height: 1.5em;
+  resize: none;
+}
+.tweet_submit{
+  text-align: center;
+}
+.tweet_submit_area{
+  background-color: hsl(39, 89%, 52%);
+  border-style: 1px;
+  border-color: orange;
+}
+
+
+// ----------------------------------------- 

@@ -1,0 +1,8 @@
+h1.tweet_title
+  | 今をつぶやこう！
+
+=form_with model: @tweet do |f|
+  .tweet_field
+    = f.text_area :body, placeholder: "今をつぶやこう！"
+  .tweet_submit
+    = f.submit "つぶやく！！！", class: "tweet_submit_area"

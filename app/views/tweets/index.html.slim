@@ -1,0 +1,73 @@
+h1 
+  ="新着ツイート"
+
+  .grid
+    - @tweets.each do |tweet|
+      .item      
+        img alt="" src="http://placehold.it/240x150" /
+        p
+          .tweet_content
+            .tweet_content_name
+              = "投稿者 : #{tweet.user.name}"
+            .tweet_content_body
+              = tweet.body
+            .tweet_content_time
+              = "ツイート日 : #{tweet.created_at}"
+
+  = paginate @tweets
+
+
+      / .item 
+      /   img alt="" src="http://placehold.it/240x150" /
+      /   p
+      /     .tweet_content
+      /       .tweet_content_name
+      /         = "投稿者 : #{tweet.user.name}"
+      /       .tweet_content_body
+      /         = tweet.body
+      /       .tweet_content_time
+      /         = "ツイート日 : #{tweet.created_at}"
+      / .item 
+      /   img alt="" src="http://placehold.it/240x150" /
+      /   p
+      /     .tweet_content
+      /       .tweet_content_name
+      /         = "投稿者 : #{tweet.user.name}"
+      /       .tweet_content_body
+      /         = tweet.body
+      /       .tweet_content_time
+      /         = "ツイート日 : #{tweet.created_at}"
+      / .item 
+      /   img alt="" src="http://placehold.it/240x150" /
+      /   p
+      /     .tweet_content
+      /       .tweet_content_name
+      /         = "投稿者 : #{tweet.user.name}"
+      /       .tweet_content_body
+      /         = tweet.body
+      /       .tweet_content_time
+      /         = "ツイート日 : #{tweet.created_at}"
+      / .item 
+      /   img alt="" src="http://placehold.it/240x150" /
+      /   p
+      /     .tweet_content
+      /       .tweet_content_name
+      /         = "投稿者 : #{tweet.user.name}"
+      /       .tweet_content_body
+      /         = tweet.body
+      /       .tweet_content_time
+      /         = "ツイート日 : #{tweet.created_at}"
+      / .item 
+      /   img alt="" src="http://placehold.it/240x150" /
+      /   p
+      /     .tweet_content
+      /       .tweet_content_name
+      /         = "投稿者 : #{tweet.user.name}"
+      /       .tweet_content_body
+      /         = tweet.body
+      /       .tweet_content_time
+      /         = "ツイート日 : #{tweet.created_at}"          
+          
+
+
+

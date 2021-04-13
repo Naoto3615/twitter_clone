@@ -1,0 +1,15 @@
+@import "tweets";
+
+h1{
+  text-align: center;
+}
+
+body{
+  background-color:blanchedalmond;
+}
+
+nav.header{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: orange;
+}
